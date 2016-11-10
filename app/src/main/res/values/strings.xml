@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CadCarros</string>
+
+    <string-array name="colors_car_array">
+        <item>VERMELHO</item>
+        <item>AZUL</item>
+        <item>CINZA</item>
+        <item>VERDE</item>
+        <item>BRANCO</item>
+    </string-array>
+</resources>

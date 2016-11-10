@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.cadcarros.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="placa"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/placa_edit_view"
+                android:layout_weight="2"
+                android:inputType="textCapCharacters" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:layout_marginLeft="6dp"
+                android:text="Buscar"
+                android:onClick="buscarCarro"
+                android:textColor="@color/colorIcons"
+                android:background="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Fabricante"/>
+
+        <EditText
+            style="@style/EditTextTheme"
+            android:id="@+id/fabricante_edit_view"
+            android:inputType="textCapCharacters" />
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Modelo"/>
+
+        <EditText
+            style="@style/EditTextTheme"
+            android:id="@+id/modelo_edit_view"
+            android:inputType="textCapCharacters" />
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Cor"/>
+
+        <Spinner
+            android:id="@+id/color_car_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+        </Spinner>
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Ano"/>
+
+        <EditText
+            style="@style/EditTextTheme"
+            android:id="@+id/ano_edit_view"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/salvar_button"
+                style="@style/ButtonView"
+                android:text="Salvar"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="8dp"
+                android:onClick="salvarCarro"/>
+
+            <Button
+                android:id="@+id/editar_button"
+                style="@style/ButtonView"
+                android:text="Editar"
+                android:onClick="editarCarro"
+                android:background="@color/colorDivider"/>
+
+            <Button
+                android:id="@+id/excluir_button"
+                style="@style/ButtonView"
+                android:text="Excluir"
+                android:onClick="excluirCarro"
+                android:background="@color/colorPrimaryText"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
